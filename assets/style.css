@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
 }
 
 
@@ -34,14 +33,18 @@
 
 /* #endregion common */
 
-
 /* #region site_header */
+
 
 #site_header{
     background-color: var(--boolando-primary);
     padding: 1% 0%;
+    width: 100%;
+    margin: 0px;
     color: white;
-    position: sticky;
+    position:fixed;
+    z-index: 1;
+    top: 0px;
 }
 
 
@@ -53,7 +56,120 @@
 img{
     width: 90px;
     height: auto;
-    flex-grow: 2;
 }
 
 /* #endregion site_header */
+
+/* #region site_main */
+#site_main{
+    position: static;
+    
+}
+
+.space{
+    margin: 5% 0;
+}
+
+/* #region top_left */
+
+.top_left{
+    
+    background-image: url(./img/1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    flex-grow: 1;
+}
+
+
+
+/* #endregion top_left */
+
+.top_center{
+    background-image: url(./img/2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    margin-left: 2%;
+    flex-grow: 1;
+    
+    
+}
+
+.top_right{
+    background-image: url(./img/3.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    margin-left: 2%;
+    flex-grow: 1;
+}
+
+
+.bottom_left{
+    
+    background-image: url(./img/4.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    flex-grow: 1;
+}
+
+.bottom_center{
+    background-image: url(./img/5.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    margin-left: 2%;
+    flex-grow: 1;
+    
+    
+}
+
+.bottom_right{
+    background-image: url(./img/6.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26%;
+    height: 500px;
+    margin-left: 2%;
+    flex-grow: 1;
+}
+
+#like{
+    position: relative;
+    background-color: white;
+    padding: 8px 16px;
+    height: auto;
+    left: 84%;
+    top: 14px;
+}
+
+#discount{
+    position: relative;
+    background-color: rgb(255, 1, 1);
+    color: white;
+    padding: 6px 16px;
+    height: auto;
+    right:45px;
+    top: 420px;
+
+}
+
+#recicle{
+    position: relative;
+    background-color: rgb(16, 138, 5);
+    color: white;
+    padding: 6px 16px;
+    right: 46px;
+    top:420px;
+}
+
+
+
+/* #endregion site_main */
