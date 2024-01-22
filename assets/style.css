@@ -9,12 +9,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
 }
 
 
 .container{
     width: 80%;
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -39,13 +41,14 @@
 
 #site_header{
     background-color: var(--boolando-primary);
-    padding: 1% 0%;
+    padding-top:0.5% ;
+    padding-bottom: 0.5%;
     width: 100%;
-    margin: 0px;
     color: white;
     position:fixed;
     z-index: 1;
     top: 0px;
+    
 }
 
 
@@ -74,7 +77,6 @@ img{
 /* #region top_left */
 
 .top_left{
-    
     background-image: url(./img/1.webp);
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,6 +85,10 @@ img{
     flex-grow: 1;
 }
 
+.top_left:hover{
+    background-image: url(./img/1b.webp);
+    transition: 500ms;
+}
 
 
 /* #endregion top_left */
@@ -95,8 +101,11 @@ img{
     height: 500px;
     margin-left: 2%;
     flex-grow: 1;
-    
-    
+}
+
+.top_center:hover{
+    background-image: url(./img/2b.webp);
+    transition: 500ms;
 }
 
 .top_right{
@@ -107,6 +116,11 @@ img{
     height: 500px;
     margin-left: 2%;
     flex-grow: 1;
+}
+
+.top_right:hover{
+    background-image: url(./img/3b.webp);
+    transition: 500ms;
 }
 
 
@@ -120,6 +134,12 @@ img{
     flex-grow: 1;
 }
 
+.bottom_left:hover{
+    background-image: url(./img/4b.webp);
+    transition: 500ms;
+}
+
+
 .bottom_center{
     background-image: url(./img/5.webp);
     background-repeat: no-repeat;
@@ -128,8 +148,11 @@ img{
     height: 500px;
     margin-left: 2%;
     flex-grow: 1;
-    
-    
+}
+
+.bottom_center:hover{
+    background-image: url(./img/5b.webp);
+    transition: 500ms;
 }
 
 .bottom_right{
@@ -142,14 +165,21 @@ img{
     flex-grow: 1;
 }
 
+.bottom_right:hover{
+    background-image: url(./img/6b.webp);
+    transition: 500ms;
+}
+
+/* #region common_main */
+
 #like{
     position: relative;
     background-color: white;
     font-size: x-large;
-    padding: 8px 16px;
+    padding: 1% 3%;
     height: auto;
-    left: 84%;
-    top: 14px;
+    left: 80%;
+    top: 3%;
 }
 
 #discount{
@@ -158,8 +188,8 @@ img{
     color: white;
     padding: 6px 16px;
     height: auto;
-    right:52px;
-    top: 420px;
+    right:11.5%;
+    top: 85%;
 
 }
 
@@ -168,21 +198,11 @@ img{
     background-color: rgb(16, 138, 5);
     color: white;
     padding: 6px 16px;
-    right: 51px;
-    top:420px;
+    right: 11%;
+    top: 85%;
 }
 
-#levis{
-    position: relative;
-    top: 95%
-}
-
-#guess{
-    position: relative;
-    top: 95%
-}
-
-#sugar{
+#info{
     position: relative;
     top: 95%
 }
@@ -195,4 +215,25 @@ h5{
     color: red;
 }
 
+/* #endregion common_main */
+
 /* #endregion site_main */
+
+#site_footer{
+    background-color: var(--boolando-dark);
+    padding: 2% 0%;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex
+}
+
+li{
+    font-size: 12px;
+    padding: 7px 15px 2px 0
+}
+
