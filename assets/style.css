@@ -31,6 +31,7 @@
     align-items: center;
 }
 
+
 /* #endregion common */
 
 /* #region site_header */
@@ -144,6 +145,7 @@ img{
 #like{
     position: relative;
     background-color: white;
+    font-size: x-large;
     padding: 8px 16px;
     height: auto;
     left: 84%;
@@ -156,7 +158,7 @@ img{
     color: white;
     padding: 6px 16px;
     height: auto;
-    right:45px;
+    right:52px;
     top: 420px;
 
 }
@@ -166,10 +168,31 @@ img{
     background-color: rgb(16, 138, 5);
     color: white;
     padding: 6px 16px;
-    right: 46px;
+    right: 51px;
     top:420px;
 }
 
+#levis{
+    position: relative;
+    top: 95%
+}
 
+#guess{
+    position: relative;
+    top: 95%
+}
+
+#sugar{
+    position: relative;
+    top: 95%
+}
+
+h5{
+    color: grey;
+}
+
+.red{
+    color: red;
+}
 
 /* #endregion site_main */
