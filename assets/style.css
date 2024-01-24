@@ -1,243 +1,243 @@
-/* #region common */
-
 :root{
     --boolando-primary:#FF6900;
     --boolando-dark:#1a1a1a;
 }
 
-* {
+/* #region common */
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0;
 }
-
 
 .container{
     width: 80%;
     max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .d-flex{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .space-between{
     justify-content: space-between;
-    
 }
 
-.align-center {
-    align-items: center;
+.cal-4{
+    width: calc((100%/12) * 4);
+    padding: 1rem;
 }
 
+.items_social{
+    text-decoration: none;
+    color: white;
+}
 
 /* #endregion common */
 
-/* #region site_header */
-
-
 #site_header{
     background-color: var(--boolando-primary);
-    padding-top:0.5% ;
-    padding-bottom: 0.5%;
-    width: 100%;
     color: white;
-    position:fixed;
-    z-index: 1;
-    top: 0px;
+    height: 40px;
     
 }
 
+.head{
+    align-content: center;
+
+}
 
 .row{
-    display: flex;
-    gap:10px
-}
-
-img{
-    width: 90px;
-    height: auto;
-}
-
-/* #endregion site_header */
-
-/* #region site_main */
-#site_main{
-    position: static;
-    
-}
-
-.space{
-    margin: 5% 0;
-}
-
-/* #region top_left */
-
-.top_left{
-    background-image: url(./img/1.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    flex-grow: 1;
-}
-
-.top_left:hover{
-    background-image: url(./img/1b.webp);
-    transition: 500ms;
-}
-
-
-/* #endregion top_left */
-
-.top_center{
-    background-image: url(./img/2.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    margin-left: 2%;
-    flex-grow: 1;
-}
-
-.top_center:hover{
-    background-image: url(./img/2b.webp);
-    transition: 500ms;
-}
-
-.top_right{
-    background-image: url(./img/3.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    margin-left: 2%;
-    flex-grow: 1;
-}
-
-.top_right:hover{
-    background-image: url(./img/3b.webp);
-    transition: 500ms;
-}
-
-
-.bottom_left{
-    
-    background-image: url(./img/4.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    flex-grow: 1;
-}
-
-.bottom_left:hover{
-    background-image: url(./img/4b.webp);
-    transition: 500ms;
-}
-
-
-.bottom_center{
-    background-image: url(./img/5.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    margin-left: 2%;
-    flex-grow: 1;
-}
-
-.bottom_center:hover{
-    background-image: url(./img/5b.webp);
-    transition: 500ms;
-}
-
-.bottom_right{
-    background-image: url(./img/6.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 26%;
-    height: 500px;
-    margin-left: 2%;
-    flex-grow: 1;
-}
-
-.bottom_right:hover{
-    background-image: url(./img/6b.webp);
-    transition: 500ms;
-}
-
-/* #region common_main */
-
-#like{
-    position: relative;
-    background-color: white;
-    font-size: x-large;
-    padding: 1% 3%;
-    height: auto;
-    left: 80%;
-    top: 3%;
-}
-
-#discount{
-    position: relative;
-    background-color: rgb(255, 1, 1);
-    color: white;
-    padding: 6px 16px;
-    height: auto;
-    right:11.5%;
-    top: 85%;
-
-}
-
-#recicle{
-    position: relative;
-    background-color: rgb(16, 138, 5);
-    color: white;
-    padding: 6px 16px;
-    right: 11%;
-    top: 85%;
-}
-
-#info{
-    position: relative;
-    top: 95%
-}
-
-h5{
-    color: grey;
-}
-
-.red{
-    color: red;
-}
-
-.grey{
-    color: grey;
-}
-
-/* #endregion common_main */
-
-/* #endregion site_main */
-
-#site_footer{
-    background-color: var(--boolando-dark);
-    padding: 2% 0%;
-    width: 100%;
-    margin: 0px;
-    color: white;
+    flex-direction: row;
 }
 
 ul{
+    display: flex;
     list-style: none;
-    display: flex
-}
-
-li{
+    gap: 5px;
     font-size: 12px;
-    padding: 7px 15px 2px 0
+    font-weight: bold;
 }
 
+.logo{
+    
+}
+
+.login{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+}
+
+/* site main */
+#site_main{
+    flex-wrap: wrap;
+    background-color: white;
+    height: calc(100vh - 110px);
+    padding-left: -1rem;
+    padding-right: -1rem;
+    
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.top_left{
+    position: relative;
+}
+
+.like{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.like_back{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 1, 1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.sales{
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sustainable{
+    position: absolute;
+    bottom: 2rem;
+    left: 3.8rem;
+    background-color: green;
+    color: white;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sustainable_2{
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    background-color: green;
+    color: white;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* #region transiction card */
+.trans_back{
+    display: none;
+    
+
+}
+
+.card:hover .trans_front{
+    display: none;
+}
+.card:hover .trans_back{
+    display: block;
+    
+    
+}
+
+.like_back{
+    display: none;
+    
+}
+
+.top_left:hover .like{
+    display: none;
+}
+
+.top_left:hover .like_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+/* #endregion transiction card */
+
+.red{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.grey {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#site_footer{
+    background-color: var(--boolando-dark);
+    height: 70px;
+    color: white;   
+}
+
+.font{
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.social{
+    display: flex;
+    gap: 8px;
+}
+
+.legal{
+    font-size: 10px;
+    font-weight: 100;
+}
